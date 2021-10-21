@@ -190,6 +190,34 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: normalTrashBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8509991672795117636, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -261,7 +289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' > Mom: Take out the trash please!'
+  m_text: '> Mom: PLACEHOLDER TEXT'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -324,7 +352,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 4, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -600,6 +628,34 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: normalTrashBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8509991672795117636, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -869,6 +925,34 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: normalTrashBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8509991672795117636, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -953,6 +1037,34 @@ PrefabInstance:
     - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: normalTrashBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8509991672795117636, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
       propertyPath: m_Color.b
@@ -1109,6 +1221,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081801800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081801802}
+  - component: {fileID: 2081801801}
+  m_Layer: 0
+  m_Name: Day1Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2081801801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081801800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8732221903a30ab48811c491e07ee2f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 257353449}
+--- !u!4 &2081801802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081801800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.47262406, y: 0.0814869, z: -0.19882815}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1398538291753049389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1164,6 +1320,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: normalTrashBroken
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419363949282555276, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
+      propertyPath: trashBreakEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c4590e7631a8784082856ebbfd87dc0, type: 3}
 --- !u!1001 &6262800127843910056
@@ -1173,6 +1357,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2081801801}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: trashThrownAway
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Day1Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608228981, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
+      propertyPath: trashAway.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1881268854629353246, guid: 20445af5f85fef442945949fe3d288c9, type: 3}
       propertyPath: m_Name
       value: Trashcan

@@ -26,7 +26,15 @@ public class TrashDamageScript : MonoBehaviour
 
     void Update()
     {
-        
+        if(transform.position.y < -10)
+        {
+            transform.position = new Vector2(transform.position.x, 12);
+        }
+        if(transform.position.x > 9 || transform.position.x < -9)
+        {
+            transform.position = new Vector2(5 * transform.position.normalized.x, transform.position.y);
+        }
+
         if(isGrounded)
         {
             Debug.Log("Grounded!");
