@@ -25,6 +25,11 @@ public class Day1Manager : MonoBehaviour
         }
     }
 
+    public void evilTrashBroken()
+    {
+
+    }
+
     public void normalTrashBroken()
     {
         brokenCount++;
