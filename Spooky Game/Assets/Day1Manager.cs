@@ -5,6 +5,10 @@ using TMPro;
 public class Day1Manager : MonoBehaviour
 {
     public TMP_Text textBox;
+    public GameObject background;
+    public GameObject mom;
+    public GameObject ground;
+
 
     private int brokenCount = 0;
     private int trashCount = 0;
@@ -27,7 +31,17 @@ public class Day1Manager : MonoBehaviour
 
     public void evilTrashBroken()
     {
+        Debug.Log("Uh Oh...");
 
+        textBox.text += "> Mom: WHAT HAVE YOU DONE!";
+        setEvil();
+    }
+
+    public void setEvil()
+    {
+        background.GetComponent<Evilify>().makeEvil();
+        mom.GetComponent<Evilify>().makeEvil();
+        ground.GetComponent<Evilify>().makeEvil();
     }
 
     public void normalTrashBroken()

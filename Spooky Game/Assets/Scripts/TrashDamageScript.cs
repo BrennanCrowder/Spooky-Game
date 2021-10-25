@@ -58,10 +58,7 @@ public class TrashDamageScript : MonoBehaviour
 
         if(health == 0 && flag)
         {
-            if (gameObject.CompareTag("EvilTrash"))
-            {
-
-            }
+           
             gameObject.GetComponent<MouseMoveScript>().move = false;
             Debug.Log("Trash Event...");
             trashBreakEvent.Invoke();
