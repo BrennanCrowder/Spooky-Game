@@ -8,7 +8,7 @@ public class Day1Manager : MonoBehaviour
     public GameObject background;
     public GameObject mom;
     public GameObject ground;
-
+    public Sprite neutralMom;
 
     private int brokenCount = 0;
     private int trashCount = 0;
@@ -46,6 +46,7 @@ public class Day1Manager : MonoBehaviour
 
     public void normalTrashBroken()
     {
+        mom.GetComponent<SpriteRenderer>().sprite = neutralMom;
         brokenCount++;
         Debug.Log("Trash Broken...");
         if (brokenCount == 1)

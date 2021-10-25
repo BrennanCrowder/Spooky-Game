@@ -1378,6 +1378,7 @@ MonoBehaviour:
   background: {fileID: 334126328}
   mom: {fileID: 858124595}
   ground: {fileID: 475188424}
+  neutralMom: {fileID: 21300000, guid: a09e946a92d3dba49af4a4d868d0d950, type: 3}
 --- !u!4 &2081801802
 Transform:
   m_ObjectHideFlags: 0
