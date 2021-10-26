@@ -9,6 +9,8 @@ public class Day1Manager : MonoBehaviour
     public GameObject mom;
     public GameObject ground;
     public Sprite neutralMom;
+    public GameObject evilText;
+
 
     private int brokenCount = 0;
     private int trashCount = 0;
@@ -42,6 +44,7 @@ public class Day1Manager : MonoBehaviour
         background.GetComponent<Evilify>().makeEvil();
         mom.GetComponent<Evilify>().makeEvil();
         ground.GetComponent<Evilify>().makeEvil();
+        evilText.SetActive(true);
     }
 
     public void normalTrashBroken()
