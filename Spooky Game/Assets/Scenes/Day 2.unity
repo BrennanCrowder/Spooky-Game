@@ -314,7 +314,7 @@ MonoBehaviour:
   - {fileID: 166293863}
   textBox: {fileID: 1047855350}
   neutralMom: {fileID: 21300000, guid: 8ffe75462e863eb45bcdd05362b13e96, type: 3}
-  evilText: {fileID: 0}
+  evilText: {fileID: 954036503}
   flag: 0
 --- !u!1 &166293863
 GameObject:
@@ -1533,7 +1533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.54}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.4, y: 49.1}
+  m_AnchoredPosition: {x: -110, y: 124}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954036505
