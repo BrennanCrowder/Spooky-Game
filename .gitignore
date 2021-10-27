@@ -2,14 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-*/[Ll]ibrary/
-Spooky Game/Library/
-*/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-*/[Ll]ogs/
-/[Mm]emoryCaptures/
+/Spooky Game/[Ll]ibrary/
+/Spooky Game/[Tt]emp/
+/Spooky Game/[Oo]bj/
+/Spooky Game/[Bb]uild/
+/Spooky Game/[Bb]uilds/
+/Spooky Game/[Ll]ogs/
+/Spooky Game/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta

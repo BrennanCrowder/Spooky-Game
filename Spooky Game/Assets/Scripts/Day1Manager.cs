@@ -17,7 +17,7 @@ public class Day1Manager : MonoBehaviour
 
     void Start()
     {
-        textBox.text = "> Mom: Take out the trash please! \n";
+        textBox.text = "> Mom: Take out the trash please, and be careful not to drop it! \n";
     }
 
 
@@ -34,8 +34,6 @@ public class Day1Manager : MonoBehaviour
     public void evilTrashBroken()
     {
         Debug.Log("Uh Oh...");
-
-        textBox.text += "> Mom: WHAT HAVE YOU DONE!";
         setEvil();
     }
 
