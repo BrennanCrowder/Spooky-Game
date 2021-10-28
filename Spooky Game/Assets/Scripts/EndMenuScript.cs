@@ -14,7 +14,7 @@ public class EndMenuScript : MonoBehaviour
     [SerializeField] private Sprite momFail;
 
     private int evilCount = 0;
-    public int evilMax = 6;
+    public int evilMax = 4;
     private double endCount = -1;
     public double endMax = 1;
     [SerializeField] private GameObject jumpscare;

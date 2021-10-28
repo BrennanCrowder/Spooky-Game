@@ -34,7 +34,7 @@ public class Day3Manager : MonoBehaviour
 
     public void Start()
     {
-        textBox.text = "> Mom: Could you mop the floor for me honey? \n> Mom: Make sure to dip the mop in bucket often so it stays clean! \n";
+        textBox.text = "> Mom: Could you mop the floor for me honey? \n> Mom: Make sure to dip the mop in the bucket often so it stays clean! \n";
         if (curKarma >= 1)
         {
             setEvilObjects();
