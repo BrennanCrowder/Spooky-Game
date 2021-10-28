@@ -36,7 +36,7 @@ public class MessScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject == mop)
+        if (col.gameObject == mop && !col.gameObject.GetComponent<MopScript>().alreadyDirty)
         {
             mop.GetComponent<MopScript>().dirtCount += 1;
             manager.removeMess(this);

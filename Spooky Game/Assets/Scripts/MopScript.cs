@@ -5,11 +5,11 @@ using UnityEngine;
 public class MopScript : MonoBehaviour
 {
     [SerializeField] private int dirtMax = 5;
-    [SerializeField] private float smearCooldown = 1;
-    private float smearTime = 0;
+    [SerializeField] private double smearCooldown = 1;
+    private double smearTime = 0;
     [SerializeField] private GameObject smear;
     public int dirtCount = 0;
-    private bool alreadyDirty;
+    public bool alreadyDirty;
     private bool evil = false;
     [SerializeField] private GameObject bucket;
     [SerializeField] private Day3Manager manager;
@@ -38,7 +38,7 @@ public class MopScript : MonoBehaviour
 
             if (smearTime >= smearCooldown)
             {
-                newSmear = Instantiate(smear, this.gameObject.transform, true);
+                newSmear = Instantiate(smear, this.gameObject.transform.position + new Vector3(1, 0, 0), this.gameObject.transform.rotation);
                 newSmear.GetComponent<MessScript>().createSmear(this.gameObject, manager);
                 smearTime = 0;
             }
@@ -47,6 +47,7 @@ public class MopScript : MonoBehaviour
                 smearTime += Time.deltaTime;
             }
         }
+        else smearTime = smearCooldown;
     }
 
     void OnTriggerEnter2D(Collider2D col)
