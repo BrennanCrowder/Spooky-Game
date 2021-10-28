@@ -36,7 +36,7 @@ public class MopScript : MonoBehaviour
                 alreadyDirty = true;
             }
 
-            if (smearTime >= smearCooldown)
+            if (smearTime >= smearCooldown && !manager.flag)
             {
                 newSmear = Instantiate(smear, this.gameObject.transform.position + new Vector3(1, 0, 0), this.gameObject.transform.rotation);
                 newSmear.GetComponent<MessScript>().createSmear(this.gameObject, manager);

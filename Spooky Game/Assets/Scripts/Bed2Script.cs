@@ -8,9 +8,30 @@ public class Bed2Script : MonoBehaviour
     public GameObject levelButton;
     public GameObject dayButton;
     public int curKarma;
+
+    public GameObject background;
+    public Sprite nightGood;
+    public Sprite dayGood;
+    public Sprite nightEvil1;
+    public Sprite dayEvil1;
+    public Sprite nightEvil2;
+    public Sprite dayEvil2;
+
     private void Awake()
     {
         curKarma = GameManager.GM.getKarma();
+        if (curKarma == 0)
+        {
+            background.GetComponent<SpriteRenderer>().sprite = nightGood;
+        }
+        else if (curKarma == 1)
+        {
+            background.GetComponent<SpriteRenderer>().sprite = nightEvil1;
+        }
+        else
+        {
+            background.GetComponent<SpriteRenderer>().sprite = nightEvil2;
+        }
     }
 
     private void Start()
@@ -41,14 +62,18 @@ public class Bed2Script : MonoBehaviour
         dayButton.SetActive(false);
         if (curKarma == 0)
         {
+            background.GetComponent<SpriteRenderer>().sprite = dayGood;
             textBox.text = "> Mom: Good morning! I hope you have a wonderful day... after your chores of course!";
             
         }
-        else if (curKarma == 1) {
+        else if (curKarma == 1) 
+        {
+            background.GetComponent<SpriteRenderer>().sprite = dayEvil1;
             textBox.text = "> Mom: Good morning! Hope you're feeling better. \n> Mom: Now go on and do your chores.";
         }
         else
         {
+            background.GetComponent<SpriteRenderer>().sprite = dayEvil2;
             textBox.text = "> Mom: You'd better do things right today, you understand me?";
 
         }

@@ -28,8 +28,9 @@ public class Day1Manager : MonoBehaviour
         Debug.Log("TrashThrownAway!");
         if(trashCount == 6)
         {
+            flag = true;
             Debug.Log("Trash Done!");
-            textBox.text += "> Mom: Good job, all your chores are done for the day go ahead and get some rest";
+            textBox.text += "> Mom: Good job, all your chores are done for the day. \n> Mom: Go ahead and get some rest.";
             levelButton.SetActive(true);
         }
     }

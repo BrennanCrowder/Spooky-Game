@@ -9,9 +9,25 @@ public class Bed1Script : MonoBehaviour
     public GameObject dayButton;
 
     public int curKarma;
+
+    public GameObject background;
+    public Sprite nightGood;
+    public Sprite dayGood;
+    public Sprite nightEvil;
+    public Sprite dayEvil;
+
     private void Awake()
     {
         curKarma = GameManager.GM.getKarma();
+        if (curKarma == 0)
+        {
+            background.GetComponent<SpriteRenderer>().sprite = nightGood;
+        }
+        else
+        {
+            background.GetComponent<SpriteRenderer>().sprite = nightEvil;
+        }
+
     }
 
     public void nextLevel()
@@ -41,10 +57,12 @@ public class Bed1Script : MonoBehaviour
         dayButton.SetActive(false);
         if (curKarma == 0)
         {
-            textBox.text = "> Mom: Good Morning! Hope you rested well!  \n> Mom: Don't forget to do your chores again today!";
+            background.GetComponent<SpriteRenderer>().sprite = dayGood;
+            textBox.text = "> Mom: Good morning! Hope you rested well!  \n> Mom: Don't forget to do your chores again today!";
             
         } else
         {
+            background.GetComponent<SpriteRenderer>().sprite = dayEvil;
             textBox.text = "> Mom: I expect today to be better than yesterday. Now go do your chores.";
             
         }

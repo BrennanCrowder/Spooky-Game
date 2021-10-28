@@ -60,6 +60,12 @@ public class GameManager : MonoBehaviour
         return karma;
     }
 
+    public void resetKarma()
+    {
+        karma = 0;
+        sceneCount = 2;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +77,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Next Scene");
         SceneManager.LoadScene(sceneCount);
         sceneCount++;
+    }
+
+    public void loadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     public void quitGame()
