@@ -10,8 +10,6 @@ public class Day3Manager : MonoBehaviour
     public GameObject[] dirt;
     public GameObject[] smear;
 
-
-
     public void setEvil()
     {
         background.GetComponent<Evilify>().makeEvil();

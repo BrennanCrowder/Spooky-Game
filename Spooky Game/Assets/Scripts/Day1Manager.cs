@@ -10,7 +10,7 @@ public class Day1Manager : MonoBehaviour
     public GameObject ground;
     public Sprite neutralMom;
     public GameObject evilText;
-
+    public GameObject levelButton;
 
     private int brokenCount = 0;
     private int trashCount = 0;
@@ -24,10 +24,12 @@ public class Day1Manager : MonoBehaviour
     public void trashThrownAway()
     {
         trashCount++;
+        Debug.Log("TrashThrownAway!");
         if(trashCount == 6)
         {
             Debug.Log("Trash Done!");
             textBox.text += "> Mom: Good job, all your chores are done for the day go ahead and get some rest";
+            levelButton.SetActive(true);
         }
     }
 
@@ -37,12 +39,25 @@ public class Day1Manager : MonoBehaviour
         setEvil();
     }
 
+    public void nextLevel()
+    {
+        GameManager.GM.nextScene();
+    }
+
+
+    public GameManager gameMan;
+    private void OnLevelWasLoaded(int level)
+    {
+        gameMan = FindObjectOfType<GameManager>();
+    }
     public void setEvil()
     {
         background.GetComponent<Evilify>().makeEvil();
         mom.GetComponent<Evilify>().makeEvil();
         ground.GetComponent<Evilify>().makeEvil();
         evilText.SetActive(true);
+        levelButton.SetActive(true);
+        GameManager.GM.addKarma();
     }
 
     public void normalTrashBroken()

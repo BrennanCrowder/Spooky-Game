@@ -13,14 +13,33 @@ public class Day2Manager : MonoBehaviour
     public Sprite neutralMom;
     public GameObject evilText;
     public bool flag = false;
+    public int curKarma;
+    public GameObject levelButton;
+
 
     private int cleanAmnt = 0;
     private int dirtyAmnt = 0;
 
+    public GameManager gameMan;
+    private void OnLevelWasLoaded(int level)
+    {
+        gameMan = GameManager.GM;
+        curKarma = GameManager.GM.getKarma();
+    }
 
+    
     public void Start()
     {
         textBox.text = "> Mom: Go ahead and clean the dishes for me sweety! \n";
+        if (curKarma == 1)
+        {
+            setEvilTools();
+        }
+    }
+
+    public void nextLevel()
+    {
+        GameManager.GM.nextScene();
     }
 
     public void cleanTool()
@@ -47,18 +66,21 @@ public class Day2Manager : MonoBehaviour
         }
         if (dirtyAmnt == 5)
         {
-            setEvil();
             flag = true;
+            setEvil();
+            
         }
         else if(cleanAmnt == 5)
         {
-            allClean();
             flag = true;
+            allClean();
+            
         }
         else if (dirtyAmnt + cleanAmnt == 5)
         {
-            neutralEnd();
             flag = true;
+            neutralEnd();
+            
         }
     }
 
@@ -75,12 +97,15 @@ public class Day2Manager : MonoBehaviour
         water.GetComponent<Evilify>().makeEvil();
         evilText.SetActive(true);
         setEvilTools();
+        GameManager.GM.addKarma();
+        levelButton.SetActive(true);
     }
 
     public void allClean()
     {
 
-        textBox.text += "> Mom: Good job sweetie pie. \n";
+        textBox.text += "> Mom: Good job sweetie pie. You deserve a nice nap! \n";
+        levelButton.SetActive(true);
     }
 
     public void setEvilTools()
