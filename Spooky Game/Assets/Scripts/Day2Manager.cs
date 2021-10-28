@@ -30,7 +30,7 @@ public class Day2Manager : MonoBehaviour
     
     public void Start()
     {
-        textBox.text = "> Mom: Go ahead and clean the dishes for me sweety! \n";
+        textBox.text = "> Mom: Go ahead and clean the dishes for me sweetie! \n> Mom: Make sure to run them through the water. \n";
         if (curKarma == 1)
         {
             setEvilTools();
@@ -49,6 +49,9 @@ public class Day2Manager : MonoBehaviour
 
     public void dirtyTool()
     {
+        if (dirtyAmnt == 0) textBox.text += "> Mom: Watch what you're doing!  That one was still dirty! \n";
+        if (dirtyAmnt == 2) textBox.text += "> Mom: Don't you dare make me tell you again! \n";
+
         setNeutralMom();
         dirtyAmnt++;
     }
@@ -86,7 +89,7 @@ public class Day2Manager : MonoBehaviour
 
     public void neutralEnd()
     {
-        textBox.text += "> Mom: All right honey be more careful next time but good job.";
+        textBox.text += "> Mom: All right honey, be more careful next time but good job.";
     }
 
     public void setEvil()

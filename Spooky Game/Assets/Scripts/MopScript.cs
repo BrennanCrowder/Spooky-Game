@@ -40,6 +40,7 @@ public class MopScript : MonoBehaviour
             {
                 newSmear = Instantiate(smear, this.gameObject.transform.position + new Vector3(1, 0, 0), this.gameObject.transform.rotation);
                 newSmear.GetComponent<MessScript>().createSmear(this.gameObject, manager);
+                if (evil) newSmear.GetComponent<MessScript>().evilify();
                 smearTime = 0;
             }
             else
