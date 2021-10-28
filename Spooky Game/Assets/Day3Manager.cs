@@ -26,12 +26,12 @@ public class Day3Manager : MonoBehaviour
         mom.GetComponent<Evilify>().makeEvil();
         mop.GetComponent<MopScript>().evilify();
 
-        foreach(MessScript item in messList)
+        foreach (MessScript item in messList)
         {
             item.evilify();
         }
     }
-   
+
     public void addMess(MessScript mess)
     {
         messList.Add(mess);

@@ -19,8 +19,6 @@ public class MopScript : MonoBehaviour
     [SerializeField] private Sprite mopDirty;
     [SerializeField] private Sprite mopBloody;
 
-    private Vector2
-
     void Awake()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = mopClean;
