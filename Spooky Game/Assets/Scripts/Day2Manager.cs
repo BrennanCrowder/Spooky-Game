@@ -90,6 +90,7 @@ public class Day2Manager : MonoBehaviour
     public void neutralEnd()
     {
         textBox.text += "> Mom: All right honey, be more careful next time but good job.";
+        levelButton.SetActive(true);
     }
 
     public void setEvil()

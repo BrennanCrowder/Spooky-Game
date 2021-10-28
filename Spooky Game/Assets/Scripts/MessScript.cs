@@ -7,6 +7,7 @@ public class MessScript : MonoBehaviour
     [SerializeField] private Day3Manager manager;
     [SerializeField] private bool smear = true;
     [SerializeField] private GameObject mop;
+    private bool evil = false;
     
     public Sprite goodSolid;
     public Sprite evilSolid;
@@ -19,7 +20,7 @@ public class MessScript : MonoBehaviour
         {
             evilify();
         }
-        else
+        else if (!evil)
         {
             if (!smear)
             {
@@ -46,6 +47,7 @@ public class MessScript : MonoBehaviour
 
     public void evilify()
     {
+        evil = true;
         if (!smear)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = evilSolid;

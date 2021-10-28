@@ -81,7 +81,7 @@ public class Day3Manager : MonoBehaviour
 
     public void goodEnd()
     {
-        textBox.text += "> Mom: Great job dear!  Go on back to your room, mom has some things to do now. \n";
+        textBox.text += "> Mom: Great job dear!  Go on back to your room, mom is busy now. \n";
         levelButton.SetActive(true);
     }
 

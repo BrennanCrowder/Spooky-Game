@@ -20,13 +20,13 @@ public class Bed2Script : MonoBehaviour
             textBox.text = "> Mom: I am so proud of you honey! I hope you sleep well!";
 
         } 
-        else if (curKarma <= 2)
+        else if (curKarma == 1)
         {
-            textBox.text = "> Mom: You have been a bit rebelous recently I hope you arn't sick. Get a good night sleep.";
+            textBox.text = "> Mom: You have been a bit troublesome recently, I hope you aren't sick. \n> Mom: Get some good sleep tonight, ok?";
         }
         else
         {
-            textBox.text = "> Mom: ...... you know what you did. Go to sleep.";
+            textBox.text = "> Mom: ......you know what you did. Go to sleep, NOW.";
         }
         dayButton.SetActive(true);
     }
@@ -41,15 +41,15 @@ public class Bed2Script : MonoBehaviour
         dayButton.SetActive(false);
         if (curKarma == 0)
         {
-            textBox.text = "> Mom: Good Morning! I hope you have a wonderful day... after your chores of course!";
+            textBox.text = "> Mom: Good morning! I hope you have a wonderful day... after your chores of course!";
             
         }
-        else if (curKarma <= 2) {
-            textBox.text = "> Mom: Good Morning! Hope you are feeling better now go do your chores.";
+        else if (curKarma == 1) {
+            textBox.text = "> Mom: Good morning! Hope you're feeling better. \n> Mom: Now go on and do your chores.";
         }
         else
         {
-            textBox.text = "> Mom: Do better today.";
+            textBox.text = "> Mom: You'd better do things right today, you understand me?";
 
         }
         levelButton.GetComponentInChildren<TMP_Text>().text = "Go Mop...";

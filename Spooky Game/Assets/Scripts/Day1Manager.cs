@@ -14,6 +14,7 @@ public class Day1Manager : MonoBehaviour
 
     private int brokenCount = 0;
     private int trashCount = 0;
+    private bool flag = false;
 
     void Start()
     {
@@ -44,6 +45,15 @@ public class Day1Manager : MonoBehaviour
         GameManager.GM.nextScene();
     }
 
+    private void Update()
+    {
+        if (!flag && (brokenCount + trashCount == 6))
+        {
+            flag = true;
+            textBox.text += "> Mom: Well, at least you threw out the important stuff.  Let's go inside. \n";
+            levelButton.SetActive(true);
+        }
+    }
 
     public GameManager gameMan;
     private void OnLevelWasLoaded(int level)
@@ -70,21 +80,21 @@ public class Day1Manager : MonoBehaviour
             Debug.Log("Updating Text...");
             textBox.text += "> Mom: Please be more careful dear! \n";
         }
-        else if (brokenCount == 2)
+        /*else if (brokenCount == 2)
         {
             Debug.Log("Updating Text...");
             textBox.text += "> Mom: Stop playing around! \n";
-        }
+        }*/
         else if (brokenCount == 3)
         {
             Debug.Log("Updating Text...");
-            textBox.text += "> Mom: Your pushing it! \n";
+            textBox.text += "> Mom: Stop playing around, you're really pushing it! \n";
         }
-        else if (brokenCount == 4)
+        /*else if (brokenCount == 4)
         {
             Debug.Log("Updating Text...");
             textBox.text += "> Mom: I said stop! \n";
-        }
+        }*/
         else if (brokenCount == 5)
         {
             Debug.Log("Updating Text...");

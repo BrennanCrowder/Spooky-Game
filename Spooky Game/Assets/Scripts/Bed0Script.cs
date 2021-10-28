@@ -10,7 +10,7 @@ public class Bed0Script : MonoBehaviour
 
     private void Start()
     {
-        textBox.text = "> Mom: Good Morning Sweetie! Dont forget to be a good boy and do your weekly chores!";
+        textBox.text = "> Mom: Good morning sweetie! Don't forget to be a good boy and do your weekly chores!";
         levelButton.SetActive(true);
     }
 

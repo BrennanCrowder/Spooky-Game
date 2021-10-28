@@ -36,9 +36,18 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextAsset saveFile;
 
+    [SerializeField] private AudioSource musicGood;
+    [SerializeField] private AudioSource musicEvil1;
+    [SerializeField] private AudioSource musicEvil2;
+    [SerializeField] private AudioSource musicEvil3;
+    private AudioSource currentMusic;
+    [SerializeField] private AudioSource failSound;
+
     void Awake()
     {
         karma = PlayerPrefs.GetInt("Karma");
+        currentMusic = musicGood;
+        currentMusic.Play();
     }
 
     public void addKarma()
@@ -72,7 +81,51 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (karma == 0)
+        {
+            if (currentMusic != musicGood)
+            {
+
+                musicGood.time = currentMusic.time;
+                currentMusic.Stop();
+                currentMusic = musicGood;
+                currentMusic.Play();
+            }
+
+        }
+        else if (karma == 1)
+        {
+            if (currentMusic != musicEvil1)
+            {
+                failSound.Play();
+                musicEvil1.time = currentMusic.time;
+                currentMusic.Stop();
+                currentMusic = musicEvil1;
+                currentMusic.Play();
+            }
+        }
+        else if (karma == 2)
+        {
+            if (currentMusic != musicEvil2)
+            {
+                failSound.Play();
+                musicEvil2.time = currentMusic.time;
+                currentMusic.Stop();
+                currentMusic = musicEvil2;
+                currentMusic.Play();
+            }
+        }
+        else 
+        {
+            if (currentMusic != musicEvil3)
+            {
+                failSound.Play();
+                musicEvil3.time = currentMusic.time;
+                currentMusic.Stop();
+                currentMusic = musicEvil3;
+                currentMusic.Play();
+            }
+        }
     }
 
     void ResetData()
