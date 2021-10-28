@@ -7,26 +7,48 @@ public class Day3Manager : MonoBehaviour
     public GameObject background;
     public GameObject bucket;
     public GameObject mom;
-    public GameObject[] dirt;
-    public GameObject[] smear;
+    public GameObject mop;
+    private List<MessScript> messList = new List<MessScript>();
 
 
+
+    public GameManager gameMan;
+
+    private void OnLevelWasLoaded(int level)
+    {
+        gameMan = GameManager.GM;
+    }
 
     public void setEvil()
     {
         background.GetComponent<Evilify>().makeEvil();
-        background.GetComponent<Evilify>().makeEvil();
-        background.GetComponent<Evilify>().makeEvil();
+        bucket.GetComponent<Evilify>().makeEvil();
+        mom.GetComponent<Evilify>().makeEvil();
+        mop.GetComponent<MopScript>().evilify();
 
-        foreach(GameObject items in dirt)
+        foreach(MessScript item in messList)
         {
-            items.GetComponent<Evilify>().makeEvil();
-        }
-
-        foreach (GameObject items in smear)
-        {
-            items.GetComponent<Evilify>().makeEvil();
+            item.evilify();
         }
     }
    
+    public void addMess(MessScript mess)
+    {
+        messList.Add(mess);
+    }
+
+    public void removeMess(MessScript mess)
+    {
+        messList.Remove(mess);
+    }
+
+    public void setEvilObjects()
+    {
+        bucket.GetComponent<Evilify>().makeEvil();
+        mop.GetComponent<MopScript>().evilify();
+        foreach (MessScript item in messList)
+        {
+            item.evilify();
+        }
+    }
 }
