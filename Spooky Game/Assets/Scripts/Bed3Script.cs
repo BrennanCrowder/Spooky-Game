@@ -40,13 +40,13 @@ public class Bed3Script : MonoBehaviour
     {
         if (curKarma <= 0)
         {
-            textBox.text = "> Mom: You aced all of your chores this week!  Great job honey! \n> Mom: Those trash bags were pretty fragile, so it's good that you didn't drop them. \n> Mom: There might've been some trouble if you did...\n> Mom: Anyway, keep up the good work next week!  Sweet dreams!";
+            textBox.text = "> Mom: You aced all of your chores this week!  Great job honey! \n> Mom: Those trash bags were <b>pretty fragile</b>, so it's good that you didn't drop them. \n> Mom: There might've been some trouble if you did...\n> Mom: Anyway, keep up the good work next week!  Sweet dreams!";
             endButton.SetActive(true);
 
         }
         else if (curKarma == 1)
         {
-            textBox.text = "> Mom: I know this week was a bit rough, and your chores weren't all perfect. \n> Mom: You would be in a lot more trouble if you'd messed up the other chores too. \n> Mom: That being said, let's make sure next week is better, ok honey? \n> Mom: Goodnight.";
+            textBox.text = "> Mom: I know this week was a bit rough, and your chores weren't all perfect. \n> Mom: You would be in a lot more trouble if you'd messed up the <b>other chores</b> too. \n> Mom: That being said, let's make sure next week is better, ok honey? \n> Mom: Goodnight.";
             endButton.SetActive(true);
         }
         else if (curKarma == 2)
@@ -56,7 +56,10 @@ public class Bed3Script : MonoBehaviour
         }
         else
         {
-            textBox.text = "> Mom: YOU'VE SEEN TOO MUCH. \n> Mom: YOU SHOULD HAVE DONE YOUR CHORES AND STAYED A NAIVE LITTLE CHILD. \n> Mom: THERE IS NO GOING BACK NOW. \n> Mom: ... ";
+            textBox.gameObject.GetComponent<TMPro.Examples.VertexJitter>().AngleMultiplier = 1;
+            textBox.gameObject.GetComponent<TMPro.Examples.VertexJitter>().CurveScale = 2;
+            textBox.gameObject.GetComponent<TMPro.Examples.VertexJitter>().SpeedMultiplier = 1;
+            textBox.text = "> Mom: YOU'VE SEEN TOO MUCH. \n> Mom: YOU SHOULD HAVE DONE YOUR CHORES AND STAYED A NAIVE LITTLE CHILD. \n> Mom: <color=#8b0000><b>THERE IS NO GOING BACK NOW!</b></color> \n> Mom: ... ";
             endButtonEvil.SetActive(true);
         }
     }
